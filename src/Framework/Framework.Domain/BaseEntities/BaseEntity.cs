@@ -1,15 +1,16 @@
-﻿using Utilities;
+﻿
+using Framwork.Utilities;
 
 namespace Framework.Domain.BaseEntities;
 
-public class BaseEntity
+public class BaseEntity<T>
 {
-    public long Id { get; set; }
+    public T Id { get; set; }
     public DateTime CreatedDate { get; set; }
     public DateTime UpdateDate { get; set; }
 
     public BaseEntity()
     {
-        CreatedDate = DateUtility.DateTimeNow()
+        CreatedDate = DateUtility.DateTimeNow();
     }
 }

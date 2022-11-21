@@ -10,4 +10,8 @@
     <Folder Include="BaseEntities\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Framework.Shared\Framework.csproj" />
+  </ItemGroup>
+
 </Project>
