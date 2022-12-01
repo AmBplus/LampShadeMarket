@@ -52,5 +52,7 @@ public class ApplicationSettings : object
 
     // **********
     public TablesDefaultSettings TablesDefaultSettings { get; set; }
+    public string SqlServerConnectionDefault { get; set; }
+
     // **********
 }
