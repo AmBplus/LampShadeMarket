@@ -1,9 +1,10 @@
 ﻿using Framework.Domain.BaseEntities;
 
-namespace ShopManagement.Domain.ProductAggregate;
+namespace ShopManagement.Domain.ProductAggregate.ProductCategoryModel;
 
-public class ProductCategoryEntity :BaseEntity<long>
+public class ProductCategoryEntity : BaseEntity<long>
 {
+    private ProductCategoryEntity() { }
     public ProductCategoryEntity(string name, string description, string imageSrc, string imageAlt, string imageTitle, string keywords, string metaDescription, string slug)
     {
         Name = name;
