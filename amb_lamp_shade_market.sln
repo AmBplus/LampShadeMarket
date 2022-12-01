@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Infrastructure", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceHost", "src\ServiceHost\ServiceHost.csproj", "{22E595F0-BCB7-4891-8DF9-CB2D969974AE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework.Asp", "src\Framework\Framework.Asp\Framework.Asp.csproj", "{33062FE3-0B18-4A53-A316-579A2A2FD7A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{22E595F0-BCB7-4891-8DF9-CB2D969974AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22E595F0-BCB7-4891-8DF9-CB2D969974AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22E595F0-BCB7-4891-8DF9-CB2D969974AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33062FE3-0B18-4A53-A316-579A2A2FD7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33062FE3-0B18-4A53-A316-579A2A2FD7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33062FE3-0B18-4A53-A316-579A2A2FD7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33062FE3-0B18-4A53-A316-579A2A2FD7A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -98,6 +104,7 @@ Global
 		{034B7723-9556-4BD7-8D9D-CEE2874E8A80} = {0B747320-49BD-4901-AB0F-D412FD862899}
 		{32C6A457-AB35-4C68-8D93-8B21004BF465} = {82782DEB-E1CD-4DFB-A579-22B519FEA835}
 		{22E595F0-BCB7-4891-8DF9-CB2D969974AE} = {A0C83519-3756-4791-B975-98D197F5CAD2}
+		{33062FE3-0B18-4A53-A316-579A2A2FD7A3} = {82782DEB-E1CD-4DFB-A579-22B519FEA835}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EA4201CA-F25A-4B0A-B79A-F74C796DF5FF}

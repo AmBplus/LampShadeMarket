@@ -53,11 +53,6 @@ public class ProductCategoryApplication : IProductCategoryApplication
                 ParameterName = $"@{nameof(searchModel.Name)}",
                 Value = searchModel.Name,
             },
-            new SqlParameter()
-            {
-            ParameterName = $"@{nameof(searchModel)}",
-            Value = nameof(searchModel),
-            }
         };
         // Get Result 
 
