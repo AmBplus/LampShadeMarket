@@ -1,5 +1,4 @@
-﻿
-using Framework.Utilities;
+﻿using Framework.Utilities.Date;
 using Framework.Utilities.ResultUtil;
 
 namespace Framework.Domain.BaseEntities;

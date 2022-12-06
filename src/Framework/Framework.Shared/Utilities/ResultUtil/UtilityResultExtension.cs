@@ -28,7 +28,10 @@ public static class UtilityResultExtension
     {
         return ResultOperation<T>.BuildSuccessResult(message, entity);
     }
-
+    public static ResultOperation<T> ToFailed<T>(this T entity, string message)
+    {
+        return ResultOperation<T>.BuildFailedResult(message);
+    }
     public static ResultOperation<object> ToFailed(this object entity, string message)
     {
         return ResultOperation<object>.BuildFailedResult(message);

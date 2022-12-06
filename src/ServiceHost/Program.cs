@@ -34,6 +34,7 @@ try
     #endregion /Routing
 
     builder.Services.AddRazorPages();
+    builder.Services.AddControllers();
     builder.Services.ShopManagementBootstrapper(builder.Configuration);
     builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
     // Custom LogManger
@@ -93,7 +94,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
-
+app.MapControllers();
 
 
 app.Run();

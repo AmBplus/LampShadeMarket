@@ -1,4 +1,5 @@
 ﻿using Framework.Asp.Infrastructure.Messages;
+using Framework.Utilities.ResultUtil;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Framework.Asp.Infrastructure;
@@ -110,6 +111,7 @@ public abstract class BasePageModel :
         return true;
     }
 
+ 
     protected string SetReturnUrl(string? returnUrl)
     {
         if (string.IsNullOrWhiteSpace(returnUrl)) returnUrl = "./Index";

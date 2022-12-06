@@ -10,4 +10,8 @@
     <ProjectReference Include="..\..\..\Framework\Framework.Domain\Framework.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="ProductAggregate\ProductModel\" />
+  </ItemGroup>
+
 </Project>

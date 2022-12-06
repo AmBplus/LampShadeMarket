@@ -11,8 +11,8 @@ public class ProductCategoryConfiguration : IEntityTypeConfiguration<ProductCate
         builder.HasKey(x => x.Id);
         builder.Property(x => x.Name).IsRequired().HasMaxLength(250);
         builder.Property(x => x.Slug).IsRequired().HasMaxLength(300);
-        builder.Property(x => x.MetaDescription).IsRequired().HasMaxLength(150);
-        builder.Property(x => x.Keywords).IsRequired().HasMaxLength(80);
+        builder.Property(x => x.MetaDescription).HasMaxLength(150);
+        builder.Property(x => x.Keywords).HasMaxLength(80);
         builder.Property(x => x.Description).HasMaxLength(500);
         builder.Property(x => x.ImageSrc).HasMaxLength(1000);
         builder.Property(x => x.ImageAlt).HasMaxLength(250);

@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Pages\Index.cshtml~RF3a220f9.TMP\**" />
+    <Content Remove="Pages\Index.cshtml~RF3a220f9.TMP\**" />
+    <EmbeddedResource Remove="Pages\Index.cshtml~RF3a220f9.TMP\**" />
+    <None Remove="Pages\Index.cshtml~RF3a220f9.TMP\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JqueryDataTables.ServerSide.AspNetCoreWeb" Version="4.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.11">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -21,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Administration\Pages\ShopManagement\" />
+    <Folder Include="Controller\" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace Framework.Utilities;
+﻿namespace Framework.Utilities.Date;
 
 public static class DateUtility
 {

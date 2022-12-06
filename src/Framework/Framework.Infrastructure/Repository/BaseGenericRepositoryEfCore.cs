@@ -43,8 +43,16 @@ public class BaseGenericRepository<Tkey, TEntity> : IBaseGenericRepository<Tkey,
     public async Task<IEnumerable<TEntity>> GetAll(string query, SqlParameter[] parameters,  bool track = false,
         CancellationToken token = default)
     {
-        //var result = await DbSetEntity.FromSqlInterpolated<TEntity>(query).HandleTracking(track).ToListAsync();
-        var result = await DbSetEntity.FromSqlRaw(query,parameters.ToArray<object>()).HandleTracking(track).ToListAsync();
+        List<TEntity> result;
+        if (!query.Contains("@"))
+        {
+            result = await DbSetEntity.FromSqlRaw(query).HandleTracking(track).ToListAsync();
+        }
+        else
+        {
+            result = await DbSetEntity.FromSqlRaw(query, parameters.ToArray<object>()).HandleTracking(track).ToListAsync();
+        }
+        
         return result;
     }
 
